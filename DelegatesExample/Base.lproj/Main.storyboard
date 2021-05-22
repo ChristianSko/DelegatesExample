@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CbX-ub-x3T">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NXB-rn-aVz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -8,132 +8,114 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Chose Side View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Base View Controller-->
+        <scene sceneID="om2-JO-DmW">
             <objects>
-                <viewController storyboardIdentifier="ChoseSide" id="BYZ-38-t0r" customClass="ChoseSideViewController" customModule="DelegatesExample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9R-jc-Czm" userLabel="DarhButton">
-                                <rect key="frame" x="107" y="152" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="Mgq-go-lIJ"/>
-                                    <constraint firstAttribute="width" constant="200" id="N8r-kq-We1"/>
-                                    <constraint firstAttribute="height" constant="200" id="dVA-1H-JpV"/>
-                                </constraints>
-                                <state key="normal" image="darth-Vaderr"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz2-lP-gli" userLabel="YodaButton">
-                                <rect key="frame" x="107" y="438" width="200" height="600"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="77F-dt-s9I"/>
-                                    <constraint firstAttribute="height" constant="200" id="xcj-jA-4XD"/>
-                                </constraints>
-                                <state key="normal" image="yoda"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chose Your Side" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmE-pk-0aE">
-                                <rect key="frame" x="92" y="16" width="230" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="dni-5v-kkp"/>
-                                    <constraint firstAttribute="width" constant="230" id="yTh-gc-3cI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="hmE-pk-0aE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="9ZT-N3-4mR"/>
-                            <constraint firstItem="C9R-jc-Czm" firstAttribute="top" secondItem="hmE-pk-0aE" secondAttribute="bottom" constant="86" id="BFB-99-FhU"/>
-                            <constraint firstItem="C9R-jc-Czm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IlN-NQ-fyx"/>
-                            <constraint firstItem="fz2-lP-gli" firstAttribute="top" secondItem="C9R-jc-Czm" secondAttribute="bottom" constant="86" id="ULc-UC-cpg"/>
-                            <constraint firstItem="fz2-lP-gli" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a0y-ae-HHF"/>
-                            <constraint firstItem="hmE-pk-0aE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ftn-OX-2IX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fz2-lP-gli" secondAttribute="bottom" constant="180" id="leZ-Hs-pq9"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="139" y="139"/>
-        </scene>
-        <!--Initial View Controller-->
-        <scene sceneID="g6g-48-iI8">
-            <objects>
-                <viewController id="CbX-ub-x3T" customClass="InitialViewController" customModule="DelegatesExample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OSw-v8-96T">
+                <viewController id="NXB-rn-aVz" customClass="BaseViewController" customModule="DelegatesExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uDC-8y-seQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQU-lG-LC4">
-                                <rect key="frame" x="117" y="826" width="180" height="40"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIt-d9-taa">
+                                <rect key="frame" x="207" y="697" width="0.0" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="2M4-CO-2fw"/>
-                                    <constraint firstAttribute="width" constant="180" id="mwv-aG-4d5"/>
+                                    <constraint firstAttribute="height" constant="100" id="QwB-K0-ePY"/>
                                 </constraints>
-                                <state key="normal" title="Chose your side">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonTapped:" destination="CbX-ub-x3T" eventType="touchDragInside" id="nJ8-g0-HjY"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="h80-JN-WJU"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starwars-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Frh-Kl-WzQ">
-                                <rect key="frame" x="57" y="373" width="300" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="857-7x-EH3"/>
-                                    <constraint firstAttribute="height" constant="150" id="dlI-dg-jSM"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="561-mb-8fP">
-                                <rect key="frame" x="20" y="611" width="374" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="kI1-42-sAZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78p-4B-vvc">
+                                <rect key="frame" x="57" y="805" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="b0D-cS-ZbG"/>
+                                    <constraint firstAttribute="width" constant="300" id="vDZ-c3-uil"/>
+                                </constraints>
+                                <state key="normal" title="Chose your side"/>
+                                <connections>
+                                    <action selector="choseSideButtonTapped:" destination="NXB-rn-aVz" eventType="touchUpInside" id="y6P-C1-R3g"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starwarslogo" translatesAutoresizingMaskIntoConstraints="NO" id="VrZ-MD-Er8">
+                                <rect key="frame" x="0.0" y="44" width="414" height="629"/>
+                            </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="wgy-h5-Iuf"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5xt-k0-1b3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="561-mb-8fP" secondAttribute="trailing" constant="20" id="Cs0-uT-nXo"/>
-                            <constraint firstItem="561-mb-8fP" firstAttribute="centerX" secondItem="OSw-v8-96T" secondAttribute="centerX" id="K7F-Vg-FLM"/>
-                            <constraint firstItem="gQU-lG-LC4" firstAttribute="top" secondItem="561-mb-8fP" secondAttribute="bottom" constant="175" id="LIv-oV-dQZ"/>
-                            <constraint firstItem="Frh-Kl-WzQ" firstAttribute="centerX" secondItem="OSw-v8-96T" secondAttribute="centerX" id="bHY-dd-DaP"/>
-                            <constraint firstItem="gQU-lG-LC4" firstAttribute="centerX" secondItem="OSw-v8-96T" secondAttribute="centerX" id="lwg-Rq-EZH"/>
-                            <constraint firstItem="561-mb-8fP" firstAttribute="leading" secondItem="OSw-v8-96T" secondAttribute="leading" constant="20" id="oFo-ng-xdk"/>
-                            <constraint firstAttribute="bottom" secondItem="gQU-lG-LC4" secondAttribute="bottom" constant="30" id="tE1-OQ-tlR"/>
-                            <constraint firstItem="Frh-Kl-WzQ" firstAttribute="centerY" secondItem="OSw-v8-96T" secondAttribute="centerY" id="yVo-63-iQr"/>
+                            <constraint firstItem="5xt-k0-1b3" firstAttribute="bottom" secondItem="78p-4B-vvc" secondAttribute="bottom" constant="7" id="3JJ-9p-GvF"/>
+                            <constraint firstItem="IIt-d9-taa" firstAttribute="centerX" secondItem="uDC-8y-seQ" secondAttribute="centerX" id="4ad-NS-YO3"/>
+                            <constraint firstItem="VrZ-MD-Er8" firstAttribute="leading" secondItem="5xt-k0-1b3" secondAttribute="leading" id="79g-dD-1vk"/>
+                            <constraint firstItem="IIt-d9-taa" firstAttribute="top" secondItem="VrZ-MD-Er8" secondAttribute="bottom" constant="24" id="IVE-CR-urz"/>
+                            <constraint firstItem="VrZ-MD-Er8" firstAttribute="top" secondItem="5xt-k0-1b3" secondAttribute="top" id="Otw-qM-eNC"/>
+                            <constraint firstItem="VrZ-MD-Er8" firstAttribute="trailing" secondItem="5xt-k0-1b3" secondAttribute="trailing" id="aqW-Gc-91H"/>
+                            <constraint firstItem="78p-4B-vvc" firstAttribute="centerX" secondItem="uDC-8y-seQ" secondAttribute="centerX" id="cDw-Ee-Bkf"/>
+                            <constraint firstItem="78p-4B-vvc" firstAttribute="top" secondItem="IIt-d9-taa" secondAttribute="bottom" constant="8" symbolic="YES" id="dWh-Dm-mU4"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="choseSideButton" destination="gQU-lG-LC4" id="XHS-k2-HTM"/>
-                        <outlet property="image" destination="Frh-Kl-WzQ" id="2lu-zz-G85"/>
-                        <outlet property="label" destination="561-mb-8fP" id="OM8-kC-ETu"/>
+                        <outlet property="characterName" destination="IIt-d9-taa" id="s79-kk-mPx"/>
+                        <outlet property="choseSideButton" destination="78p-4B-vvc" id="gde-Wl-CEH"/>
+                        <outlet property="mainImage" destination="VrZ-MD-Er8" id="zzz-mv-44r"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nfU-Ot-CeM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q9c-IC-nPM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-678" y="139"/>
+            <point key="canvasLocation" x="-75.362318840579718" y="-12.053571428571429"/>
+        </scene>
+        <!--Selection View Controller-->
+        <scene sceneID="a3M-8V-AcO">
+            <objects>
+                <viewController storyboardIdentifier="selectionVC" id="s45-ic-u4j" customClass="SelectionViewController" customModule="DelegatesExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y4c-qn-nVH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjv-kE-5ax">
+                                <rect key="frame" x="82" y="523" width="250" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="2RD-7m-J4l"/>
+                                    <constraint firstAttribute="height" constant="300" id="ckW-Zd-L9w"/>
+                                </constraints>
+                                <state key="normal" image="yoda"/>
+                                <connections>
+                                    <action selector="tappedRebelSide:" destination="s45-ic-u4j" eventType="touchUpInside" id="lSm-cZ-Znd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WH9-L5-FmI">
+                                <rect key="frame" x="82" y="78" width="250" height="380"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="0gh-vB-c7n"/>
+                                    <constraint firstAttribute="height" constant="380" id="oyN-HK-XZQ"/>
+                                </constraints>
+                                <state key="normal" image="darthVader"/>
+                                <connections>
+                                    <action selector="tappedImperialSide:" destination="s45-ic-u4j" eventType="touchUpInside" id="UHE-Vt-wDi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iT1-2x-JAd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rjv-kE-5ax" firstAttribute="centerX" secondItem="y4c-qn-nVH" secondAttribute="centerX" id="6hb-Td-j1z"/>
+                            <constraint firstItem="Rjv-kE-5ax" firstAttribute="top" secondItem="WH9-L5-FmI" secondAttribute="bottom" constant="65" id="EZ2-4b-GTM"/>
+                            <constraint firstItem="WH9-L5-FmI" firstAttribute="top" secondItem="iT1-2x-JAd" secondAttribute="top" constant="34" id="Oew-IU-Tpp"/>
+                            <constraint firstItem="iT1-2x-JAd" firstAttribute="bottom" secondItem="Rjv-kE-5ax" secondAttribute="bottom" constant="39" id="WP1-8W-NuS"/>
+                            <constraint firstItem="WH9-L5-FmI" firstAttribute="centerX" secondItem="y4c-qn-nVH" secondAttribute="centerX" id="q7I-OS-U76"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kqd-I0-DlD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702.89855072463774" y="-6.0267857142857144"/>
         </scene>
     </scenes>
     <resources>
-        <image name="darth-Vaderr" width="1180" height="1920"/>
-        <image name="starwars-logo" width="1600" height="629"/>
+        <image name="darthVader" width="1180" height="1920"/>
+        <image name="starwarslogo" width="1600" height="629"/>
         <image name="yoda" width="600" height="600"/>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
