@@ -1,24 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CbX-ub-x3T">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Chose Side View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChoseSide" id="BYZ-38-t0r" customClass="ChoseSideViewController" customModule="DelegatesExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9R-jc-Czm" userLabel="DarhButton">
+                                <rect key="frame" x="107" y="152" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="Mgq-go-lIJ"/>
+                                    <constraint firstAttribute="width" constant="200" id="N8r-kq-We1"/>
+                                    <constraint firstAttribute="height" constant="200" id="dVA-1H-JpV"/>
+                                </constraints>
+                                <state key="normal" image="darth-Vaderr"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz2-lP-gli" userLabel="YodaButton">
+                                <rect key="frame" x="107" y="438" width="200" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="77F-dt-s9I"/>
+                                    <constraint firstAttribute="height" constant="200" id="xcj-jA-4XD"/>
+                                </constraints>
+                                <state key="normal" image="yoda"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chose Your Side" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmE-pk-0aE">
+                                <rect key="frame" x="92" y="16" width="230" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dni-5v-kkp"/>
+                                    <constraint firstAttribute="width" constant="230" id="yTh-gc-3cI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hmE-pk-0aE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="9ZT-N3-4mR"/>
+                            <constraint firstItem="C9R-jc-Czm" firstAttribute="top" secondItem="hmE-pk-0aE" secondAttribute="bottom" constant="86" id="BFB-99-FhU"/>
+                            <constraint firstItem="C9R-jc-Czm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IlN-NQ-fyx"/>
+                            <constraint firstItem="fz2-lP-gli" firstAttribute="top" secondItem="C9R-jc-Czm" secondAttribute="bottom" constant="86" id="ULc-UC-cpg"/>
+                            <constraint firstItem="fz2-lP-gli" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a0y-ae-HHF"/>
+                            <constraint firstItem="hmE-pk-0aE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ftn-OX-2IX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fz2-lP-gli" secondAttribute="bottom" constant="180" id="leZ-Hs-pq9"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+        <!--Initial View Controller-->
+        <scene sceneID="g6g-48-iI8">
+            <objects>
+                <viewController id="CbX-ub-x3T" customClass="InitialViewController" customModule="DelegatesExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OSw-v8-96T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQU-lG-LC4">
+                                <rect key="frame" x="117" y="826" width="180" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2M4-CO-2fw"/>
+                                    <constraint firstAttribute="width" constant="180" id="mwv-aG-4d5"/>
+                                </constraints>
+                                <state key="normal" title="Chose your side">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="CbX-ub-x3T" eventType="touchDragInside" id="nJ8-g0-HjY"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="h80-JN-WJU"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starwars-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Frh-Kl-WzQ">
+                                <rect key="frame" x="57" y="373" width="300" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="857-7x-EH3"/>
+                                    <constraint firstAttribute="height" constant="150" id="dlI-dg-jSM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="561-mb-8fP">
+                                <rect key="frame" x="20" y="611" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kI1-42-sAZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wgy-h5-Iuf"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="561-mb-8fP" secondAttribute="trailing" constant="20" id="Cs0-uT-nXo"/>
+                            <constraint firstItem="561-mb-8fP" firstAttribute="centerX" secondItem="OSw-v8-96T" secondAttribute="centerX" id="K7F-Vg-FLM"/>
+                            <constraint firstItem="gQU-lG-LC4" firstAttribute="top" secondItem="561-mb-8fP" secondAttribute="bottom" constant="175" id="LIv-oV-dQZ"/>
+                            <constraint firstItem="Frh-Kl-WzQ" firstAttribute="centerX" secondItem="OSw-v8-96T" secondAttribute="centerX" id="bHY-dd-DaP"/>
+                            <constraint firstItem="gQU-lG-LC4" firstAttribute="centerX" secondItem="OSw-v8-96T" secondAttribute="centerX" id="lwg-Rq-EZH"/>
+                            <constraint firstItem="561-mb-8fP" firstAttribute="leading" secondItem="OSw-v8-96T" secondAttribute="leading" constant="20" id="oFo-ng-xdk"/>
+                            <constraint firstAttribute="bottom" secondItem="gQU-lG-LC4" secondAttribute="bottom" constant="30" id="tE1-OQ-tlR"/>
+                            <constraint firstItem="Frh-Kl-WzQ" firstAttribute="centerY" secondItem="OSw-v8-96T" secondAttribute="centerY" id="yVo-63-iQr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choseSideButton" destination="gQU-lG-LC4" id="XHS-k2-HTM"/>
+                        <outlet property="image" destination="Frh-Kl-WzQ" id="2lu-zz-G85"/>
+                        <outlet property="label" destination="561-mb-8fP" id="OM8-kC-ETu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nfU-Ot-CeM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-678" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="darth-Vaderr" width="1180" height="1920"/>
+        <image name="starwars-logo" width="1600" height="629"/>
+        <image name="yoda" width="600" height="600"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
